@@ -1,0 +1,39 @@
+
+h1{
+    text-align:center; 
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-top: 5%;
+}
+body{
+    background-color: rgba(97,97,97,0.986);
+    margin: 0 10%;
+    font-family: sans-serif;
+    color:black
+}
+caption{
+    background-color: white;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+h2,h4,p,td,th{
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 30xp;
+    color:black;
+    background: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+} 
+td,th{border:1px solid #ffffff}
+table{border:1px solid black}
+    

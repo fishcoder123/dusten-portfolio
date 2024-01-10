@@ -1,0 +1,39 @@
+
+        h1{
+           text-align:center; 
+        }
+        body{
+            background-color:rgba(97, 97, 97, 0.986);
+
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+        h2,h3,h1,p{
+            text-align: center;
+            font-family: serif;
+            font-weight: normal;
+            margin-top: 30xp;
+            color:black;
+            background: white;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+        }
+        .smooth{
+            display:block;
+            text-decoration: none;
+            text-align: center;
+            padding: 1em 2em;
+            width: 10em;
+            border-radius:1.5em;
+            color: #fff;
+            background-color: mediumblue;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+        }
+        .smooth:hover, .smooth:focus{
+            background-color: red;
+        }
+        
+    

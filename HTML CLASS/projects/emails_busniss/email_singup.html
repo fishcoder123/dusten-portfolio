@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Mailing List Singup</title>
+        <meta charset="utf-8">
+
+        
+
+    </head>
+    <style>
+        footer{
+    border-top: 1px solid #57b1dc;
+    text-align:center;
+    padding-top: 1em;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    margin-left: .5em;
+    margin-right: .5em;
+    border-bottom-color: 800xp solid #57b1dc;
+}
+
+h1{
+    text-align:center;
+}
+body{
+background-color: rgba(97, 97, 97, 0.986);
+margin: 0 10%;
+font-family: sans-serif;
+}
+
+h2,h3{
+text-align: center;
+font-family: serif;
+font-weight: normal;
+border-bottom: 1xp solid #000000;
+margin-top: 30xp;
+background: white;
+}
+p{font-family: serif;
+font-weight: normal;
+border-bottom: 1xp solid #000000;
+margin-top: 30xp;
+background: white;}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+    </style>
+<body>
+    <h1>web page is being work on <br>mailing list Singup</h1>
+    <from action="/mailinglist.php" method="post">
+        <fieldset>
+        <legend>Please leave your business email and phone number and I will contact you shortly.</legend>
+        <p>get news about the band such as tour dates and special mp3 releases sent to your own in-box.</p>
+        <ol>
+            <li><label for="firstlast">First Name:</label>
+            <input type="text" name="fullname" id=firstlast></li>
+            <li><label for="firstlast">Last Name:</label>
+                <input type="text" name="fullname" id=firstlast></li>
+            <li><label for="email">Email:</label>
+                <input type="text" name="email" id=email></li>
+                <li><label for="phonenumber">Phone Number:</label>
+                    <input type="tel" name="phonenumber" id=phonenumber></li>
+                    <p>What position you hiring for?</p>
+                    <select name="position">
+                        <option>choose one please</option>
+                        <option>full time</option>
+                        <option>part time</option>
+                        <option>seasonal</option>
+
+                    </select>
+            </ol>
+           
+                    <p><label>Out of Curiosity:<br> please tell me why you are entrusted in me for future employment.</p></label>
+
+            <textarea name="curiosity" placeholder="100 words or less" rows="5" cols="50"></textarea>
+            <input type="submit" value="submit">
+        </fieldset>
+    </from>
+    
+    <p><a href="../index.html">(Back to the Home Page)</a></p>
+    <footer>
+    &copy; Dusten Stahl 2023
+    <br><time>4:00 09/04/2023</time>
+    </footer>
+    
+</body>
+</html>

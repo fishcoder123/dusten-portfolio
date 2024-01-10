@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DSstyleguide</title>
+        <link rel="stylesheet" type"text/css" href="maine.css">
+    </head>
+    <nav>
+        <a href="..." class="infinitity"></a>
+    </nav>
+    <body>
+        <img class-ds.jpg src="./image/banner.jpg" alt="banner" hight="250px" width="250px">
+        <img class-ds.jpg src="./image/ds.jpg" alt="portfolio" hight="250px" width="250px">
+        <header>
+            <nav>
+                <a href="../index.html">Home</a> <a class="active">Style Guide</a> <a href="../projects.html">Projects</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>My Colors</h2>
+                <div class="palette">
+                    
+                   <div class="container">
+                    <div class="card">
+                        <div class="side" >color</div>
+                        <div class="side back">
+                            heading and Navigation 
+                            <br>#ffffff
+                        </div>
+                    </div>
+                   </div>
+                   
+                
+                    
+                    <h4>Primary color code #ffffff</h4>
+                    <p>this is color is use for secondary color and usde for most bottons and parstly accsents. </p>
+                </div>
+                <h2>background-color</h2>
+                <div class="palette">
+                    
+                   <div class="container">
+                    <div class="card">
+                        <div class="side" >background color</div>
+                        <div class="side back">
+                            gray
+                            <br>#979797 0.986
+                        </div>
+                    </div>
+                   </div>
+                   
+            <div class="palette">
+                <h2>accents</h2>
+                <div class="palette">
+                    
+                    
+                   <div class="container">
+                    <div class="card">
+                        <div class="side">color</div>
+                        <div class="side back">
+                            black
+                            <br>#000000
+                        </div>
+                    </div>
+                   </div>
+                   
+                  
+                </div>
+                <h4>Accents #000</h4>
+                <p>this accents color use manily use for is use for shading and making things pop out to make stand out. </p>
+            </div>
+            </section><!--Colors END-->
+            <section>
+                <caption><h2>Typography</h2></caption>
+                <table class="style-table">
+                    <tr>
+                        <td>
+                            <h1>Heading 1,2,3&p</h1>
+                            <p>merriweather</p>
+                        </td>
+                        <td class="td-color">
+                            <pre>
+        font-family: merriweather;
+        font-weight: 700;
+        font-style: normal;</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Body</h3>
+                            <p>Marginy</p>
+                        </td>
+                        <td class="td-color">
+                            <pre>
+        backgrounds-color: 
+        rbg(97,97,97,0.986);
+        font-family: merriweather;
+        font-style: normal</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Navigation</p>
+                            <p>Marginy</p>
+                        </td>
+                        <td class="td-color">
+                            <pre>
+        width: 100%;
+        margin-bottom: 20px;
+        display: inline-flex;
+        justify-content: center;
+        outline: 5px double #000;
+        backgrounds-color: #ffffff;
+        color: black;
+
+                        </pre>
+                       </td>
+                    </tr>
+                </table>
+            </section><!--Typography END-->
+            <section class="comps">
+                <h2>Components</h2>
+                <div class="multi-column">
+                    <article class="alternate">
+                      
+                         <h1>Navigation</h1>
+                    
+                        <br>nav<br> {
+                            width: 100%;
+                            margin-bottom: 20px;
+                            display: inline-flex;
+                            justify-content: center;
+                            outline: 5px double #000;
+                            background-color: #ffffff;
+                            color: black;
+                        }<br>
+                        
+                        <br>nav a<br> {
+                            font-size: 1.5em;
+                            padding: 5px 10px;
+                            color: black;
+                            text-decoration: none;
+                            transition: 0.5s;
+                        }<br>
+                        
+                        <br>nav a:hover<br> {
+                            background-color: #000;
+                            color: white;
+                        }
+                </p>
+                </article><!--Link END-->
+                <article>
+                    
+                    <pre>
+        <p> 
+            .shape {
+                width: 100px;
+                height: 100px;
+                border-radius: 40%;
+                transform: skew(20deg);
+                rotate: -4deg;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            
+            #color03.shape, #color04.shape, #color05.shape {
+                transition: all 1s ease-in-out;
+            }
+            
+            .palette:hover .shape {
+                width: 100%;
+                transition: all 1s ease-in-out;
+                transform: rotateY(250deg);
+                transform: rotateZ(250px);
+            }
+            </p>
+                    </pre>
+                </article><!--Nav END-->
+                <article class="alternate">
+                    
+                    
+                    <pre>
+             .style-table {
+            margin: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            border-right: 2px solid black;
+            border-left: 2px solid black
+            }
+                        
+            td {
+            vertical-align: top;
+            padding: 10px;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            }
+                        
+            .td-color {
+            width: 70%;
+            background-color: #ffffff;
+            }
+                        
+    
+                    </pre>
+                </article><!--Nav END-->
+                </div>
+            </section><!--Components END-->
+        </main>
+        <footer>
+            <p>&copy; Dusten stahl 2023</p>
+        </footer>
+    </body>
+</html>

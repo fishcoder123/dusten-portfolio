@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(97,97,97,0.986);
+}
+/*thirds*/
+div.thirds{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+div.thirds{
+    padding-bottom: 5%;
+}

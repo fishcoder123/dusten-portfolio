@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><!--Set the language to English-->
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wonky Site</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/qvc1fpo.css"><!--Link to my fonts-->
+</head>
+
+<body>
+	<header>
+		<nav class="sticky">
+			<a link="index.html" class="active-a">Home</a>
+			<a link="page-1.html">Page 1</a>
+			<a link="page-2.html" class="sub-toggle">Page 2</a>
+		</nav>
+	</header>
+	<main>
+		<div class="cover">
+			<div class="cover-text">
+				<h1>Wonky Site</h1>
+			</div><!--cover-text end-->
+			<img class="hero" src="sunrise-1920-short.jpg" alt=""></img>
+		</div> <!--cover end-->
+		<section><!--Intro-->
+				<h2 class="tagline">This is a test site. I'm written a little wonky though.</h2>
+				<p>This is a simple site with a few errors in it. Some you can clearly see in the browser here. Some you'll have to go looking through the code to find. Your job is to try and find all the errors. As a web developer, it's a very important skill to be able to read and troubleshoot code. This assignment will let you practice that. The validator at <a href="https://validator.nu/">validator.nu</a> will catch a lot but it won't catch all of them so don't rely entirely on it. If you use the validator, the warnings about adding more headings can be ignored. But there will be other warnings like lang="en" and missing alt text you should pay attention to. Keep track of the changes you make by editting the <a href="error-list.html">Error Tracker</a>.</p>
+		</section><!--Intro End-->
+		<section class="error-loc">
+			<h2>Places to look:</h2>
+			<dl class="error-list">
+				<dt>index.html (8)</dt>
+				<dt>CSS (6)</dt>
+				<dt>Page 1 (5)</dt>
+				<dt>Page 2 (5)</dt>
+				<dd> <!--In order to add a list within a list I need to put it in a description listing-->
+					<ul><!--List of Sub Pages-->
+						<li>Page A (5)</li>
+						<li>Page B (5)</li>
+						<li>Page C (4)</li>
+					</ul><!--List of Sub Pages End-->
+				</dd>
+			</dl><!--error-list end-->
+			<br></br>
+			<p>Track your changes with <a href="error-list.html">Error Tracker</a></p>
+		</section><!--error-loc end-->
+	</section>
+	</main>
+	<footer>
+		<p>&copy; H Silvia</p>
+	</footer>
+</body>
+</html>

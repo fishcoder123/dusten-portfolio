@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******I have six errors******/
+
+/*Table of Contents*/
+/*
+-Global
+	-Typography
+	-Links
+	-Header
+		-Navbar
+	-Breadcumbs
+	-Aside
+	-Body Content
+	-Images
+	-Figures
+	-Tables
+	-Fields/Forms
+	-Blockquote: Cite
+	-Footer
+-Index
+	-Hero/Cover
+	-Tagline
+	-"Places to look" list
+-Page 1
+-Page 2
+-Page A
+-Media Quieries
+*/
+
+/*****************
+Global
+This section handles the global rules. These are the selectors that aren't specific to any one page.
+******************/
+/*This removes the default margin in a web page with select all.*/
+*{
+	margin: 0;
+}
+
+/*Typography*/
+h1 {
+	font-family: bely-display, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
+}
+
+h2 {
+	border-bottom: 2px solid #43225E;
+}
+
+h3 {
+	margin-top: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: bely, serif;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 10px;
+	color: #43225E;
+}
+
+body {
+	font-family: caraque-solid, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+}
+
+/*Links*/
+a {
+	color: #43225E;
+}
+
+a:hover {
+	color: #A29061
+}
+
+/*Header Content*/
+header {
+	background-color: #43225E;
+	color: white;
+}
+
+head-cont {
+	padding: 20px;
+}
+
+.head-cont p {
+	text-indent: 0;
+}
+
+/*Navbar*/
+nav {
+	display: flex;
+	flex-direction: row;
+	background-color: #20102D;
+	padding-left: 20px;
+}
+
+nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.active-a {
+	background-color: #43225E;
+	color: #A29061;
+}
+
+.active-a:hover {
+	color: white;
+}
+
+.sticky {
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 99;
+}
+
+/*Breadcrumbs
+To help a user know where they are, you can create a trail of breadcrumbs at the top of the page. This is like a mini site map. You can see this on the sub pages.
+*/
+.crumbs {
+	margin: 10px;
+}
+
+/*Aside Content*/
+aside {
+	min-width: 150px;
+	max-width: 400px;
+	background-color: #E1D2EE;
+	padding: 10px;
+}
+
+aside h3 {
+	margin: 5px;
+}
+
+aside ul {
+	list-style: none;
+}
+
+/*Body Content*/
+.pages {
+	padding-top: 160px;
+}
+
+section{
+	padding: 10px;
+}
+
+/*This lets me quickly create a multi-column layout by turning it into a flex box.*/
+.column-layout {
+	display: flex;
+	flex-direction: row;
+}
+
+article {
+	margin: 15px;
+}
+
+p {
+	text-indent: 25px;
+	margin-bottom: 7px;
+}
+
+/*Images*/
+img {
+	margin: 20px;
+	box-shadow: 2px 2px 3px black;
+}
+
+.img-left {
+	float: left;
+	width: 40%;
+	min-width: 150px;
+}
+
+.img-right {
+	float: right;
+	width: 40%;
+	min-width: 150px;
+}
+
+/*Figures*/
+figure img {
+	margin: auto;
+}
+
+figcaption {
+	margin: 5px 0px 20px;
+	font-style: italic;
+	text-align: center;
+}
+
+/*Tables*/
+table {
+	margin: 20px auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table, th, tr, td {
+	border: 2px solid #20102D;
+}
+
+th {
+	background-color: #43225E;
+	color: white;
+}
+
+th, td {
+	padding: 5px;
+}
+
+.gold {
+	background-color: #A29061;
+}
+
+.white {
+	background-color: white;
+}
+
+/*Fields and Forms*/
+fieldset ul {
+	list-style: none;
+}
+
+input {
+	margin: 5px 10px;
+}
+
+cite {
+	float: right;
+}
+
+footer {
+	padding: 5px 20px;
+	text-align: right;
+}
+
+/*****************
+Index
+******************/
+/*Hero content*/
+.hero {
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+.cover {
+	position: relative;
+  	text-align: center;
+  	color: white;
+}
+
+.cover-text {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.cover-text h1 {
+	font-size: 1.5em;
+	text-shadow: 2px 2px 0px black;
+}
+
+.tagline {
+	font-style: italic;
+	font-size: 1.75em;
+	margin: 20px 20px 50px;
+	color: #43225E;
+}
+
+/*Places to look*/
+.error-loc {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.error-list {
+	font-size: 1.3em;
+	margin-left: 50px;
+	color: #43225E;
+}
+
+/*****************
+Page 1
+******************/
+.img-span {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leaf-wrap {
+	float: right;
+	width: 40%;
+	padding: 5px;
+	box-shadow: none;
+	shape-outside: polygon(49% 90%, 22% 90%, 9% 72%, 7% 50%, 18% 31%, 26% 15%, 37% 13%, 49% 2%, 70% 7%, 82% 26%, 94% 36%, 86% 54%, 93% 71%, 67% 88%);
+}
+
+/*****************
+Page 2
+******************/
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	background-color: #E1D2EE;
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card img {
+	width: 100%;
+	margin: auto;
+}
+
+.go-to {
+	align-self: flex-end;
+	margin: 10px;
+}
+
+/*****************
+Page A
+******************/
+.showcase {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.showcase img {
+	width: 100%;
+}
+
+/*****************
+Media Queries
+I use these to add breakpoints to the site. This will ensure my site has no graphical errors despite the screen size. These should almost always by at the end of your css.
+******************/
+
+/*Screens down to 620px will show the text on my hero image (index.html) 30% from top and the font-size is enlarged.*/
+@media screen and (min-width: 620px) {
+	.cover-text {
+		top: 30%;
+}
+	
+	.cover-text h1 {
+	font-size: 2em;
+}
+}
+
+/*Screens up to 720px will show enlarge the font in the nav, shrink the tagline text, and increases the top padding for my content. This ensures my header doesn't block the main part of the page.*/
+.media screen and {max-width: 720px} 
+	nav {
+		font-size: 1.25em;
+	}
+	
+	.tagline {
+		font-size: 1em;
+		margin: 20px;
+	}
+	
+	.pages {
+		padding-top: 170px;
+	}
+
+
+/*Screens down to 900px will enlarge the font on my hero image.*/
+@media screen and (min-width: 900px) {
+	.cover-text h1 {
+	font-size: 3em;
+}
+}
+
+/*Screens up to 1120px will use a 1 column layout.*/
+@media screen and (max-width: 1120px) {
+	.column-layout {
+		flex-direction: column;
+	}
+}

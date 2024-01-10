@@ -1,0 +1,23 @@
+body{
+    background-color:rgba(97, 97, 97, 0.986);
+
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+h1{
+    border: 1px red solid;
+    background: color #d18c1d; }
+li{
+    margin: 15px;
+    background-color: #C0A9DB;}
+p{
+    background-color: #D1D631;
+    width: 600px;
+    height: 400px;
+    border: 2px dotted ;
+    border-color: black;
+}
+a{
+    border:3px dashed;
+    background-color: #A1A1A1;
+}

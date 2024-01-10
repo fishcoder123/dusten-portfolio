@@ -1,0 +1,220 @@
+body{
+    background-color: rgba(97, 97, 97, 0.986);
+    font-family: Merriweather;
+	font-style:normal;
+}
+h1,h2,h3,p{
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    text-align: left;
+    font-family: Merriweather;
+    font-weight: normal;
+}
+nav {
+	width: 100%;
+	margin-bottom: 20px;
+	display: inline-flex;
+	justify-content: center;
+	outline: 5px double #000;
+	background-color: #ffffff;
+	color: black;
+}
+
+nav a {
+    font-size: 1.5em;
+	padding: 5px 10px;
+	color: black;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+nav a:hover {
+	background-color: #000;
+	color: white;
+}
+/* CSS Document */
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+article {
+	padding: 10px 20px;
+}
+
+.comps {
+	width: 100%;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+.btn {
+	font-family: Merriweather;
+	font-weight: 400;
+	font-style: normal;
+	padding: 10px;
+	border: none;
+	color: white;
+	transition: 0.1s;
+}
+
+
+
+.alternate {
+	background-color: #ffffff;
+}
+
+.multi-column {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.palette {
+	margin: 10px;
+	
+}
+.palette h4 {
+	text-indent: 50px;
+	font-style: normal;
+	text-decoration: underline;
+	text-underline-offset: 0.25em;
+	padding: 10px;
+}
+.container{
+	cursor: pointer;
+	height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 200px;
+}
+.card .side{
+height: 100%;
+width: 100%;
+backface-visibility: hidden;
+border-radius: 50%;
+position: absolute;
+overflow: hidden;
+text-align: center;
+line-height: 50px;
+background: #ffffff;
+}
+.card{
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: all 1s ease-in-out;
+	width: 100%;
+}
+ .card:hover{
+	transform: rotateY(180deg);
+ }
+.card .back{
+background: #ffffff;
+color: #000000;
+line-height: 50px;
+text-align: center;
+transform: rotateY(180deg); 
+
+}
+.shape {
+	width: 100px;
+    height: 100px;
+	border-radius: 40%;
+    transform: skew(20deg);
+    rotate: -4deg;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#color01.side, #color02.side, #color03.side{
+	transition: all 1s ease-in-out;
+	   background: #eaeaed;
+    color: #0087cc;
+    line-height: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.palette:hover .shape {
+	width: 100%;
+	transition: all 1s ease-in-out;
+	transform: rotateY(250deg);
+	transform: rotateZ(250px);
+}
+
+.title {
+	transform: skew(-20deg);
+	font-size: 0.25em;
+	color: white;
+	opacity: 0;
+	transition: 0.25s;
+}
+
+.palette:hover .title {
+	font-size: 2em;
+	opacity: 1;
+	
+}
+
+#color01 {
+	background-color: #ffffff;
+    
+}
+
+#color02 {
+	background-color: #979797;
+}
+
+#color03 {
+	background-color: #000;
+}
+
+
+.style-table {
+	margin: 10px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-right: 2px solid black;
+	border-left: 2px solid black
+}
+
+td {
+	vertical-align: top;
+	padding: 10px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.td-color {
+	width: 70%;
+	background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 750px) {
+	main {
+		margin: 1em;
+	}
+	
+	.comps .multi-column {
+		flex-direction: column;
+	}
+	
+	.style-table {
+		width: 100%;
+	}
+}
+img{
+	padding-left: 9px;
+} 

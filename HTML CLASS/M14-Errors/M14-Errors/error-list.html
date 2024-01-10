@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Error Tracker</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/qvc1fpo.css"><!--Link to my fonts-->
+</head>
+
+<body>
+	<header class="sticky">
+		<div class="head-cont">
+			<h1>Wonky Site: Error Tracker</h1>
+			<p>A page to track your changes.</p>
+		</div><!--head-cont end-->
+		<nav>
+			<a href="index.html" class="active-a">Home</a>
+			<a href="page-1.html">Page 1</a>
+			<a href="page-2.html">Page 2</a>
+		</nav>
+	</header>
+	<main class="pages">
+		<p class="crumbs">
+			<a href="index.html">Home</a> &gt; <a href="error-list.html">Error Tracker</a>
+		</p> <!--Breadcrumbs End-->
+		<section>
+			<h2>Error List</h2>
+			<p>This is not a page you need to check for errors. This page is just meant to keep track of the changes you make. Everytime you make an adjustment, be sure to note it below by modifying the tables below. I've already set up the tables to fit the correct number of changes that need to made. You just need to populate them with your modifications.Be sure to escape characters so you can write out the tags you change. If you view the code in my example table, you can see how I got my tags to show as text instead of having the browser try to implement them.</p>
+			<p><strong>Note:</strong> If you find any alt&#61;<q></q> that is not an error. It means that image is just decorative.</p>
+			<table>
+				<caption>Example Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Line: 14</td><!--Location-->
+					<td>There was an extra &lt;article&gt;&lt;&#47;article&gt; with no content.</td><!--Error-->
+					<td>The extra &lt;article&gt;&lt;&#47;article&gt; was removed.</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Line: 34</td><!--Location-->
+					<td>The img was missing appropriate alt text.</td><!--Error-->
+					<td>alt&#61;<q>Golden leaves with blue berries</q></td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>&lt;footer&gt;</td><!--Location-->
+					<td>The footer was placed outside of the body tag.</td><!--Error-->
+					<td>The footer was moved above the closing body tag.</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Line: 48 &amp; 52</td>
+					<td>This section was missing &lt;tr&gt;&lt;&#47;tr&gt; tags.</td>
+					<td>Added the missing tags.</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section class="column-layout">
+			<article>
+				<h3>Style Sheet</h3>
+				<p><strong>Hints&#58;</strong> These errors are going to be typos. Things like missing semi-colons, misspelled properties like fontsize instead of font-size. You shouldn't have to move things around.</p>
+			<table class="lefty">
+				<caption>style.css Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>line 197</td><!--Location-->
+					<td>font style incorrectly write</td><!--Error-->
+					<td>wort out colon & parentheses also semi colon</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>252</td><!--Location-->
+					<td>there was a comma instead of a semi colon</td><!--Error-->
+					<td>replace with semi colon</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>289</td><!--Location-->
+					<td>misspelled properties</td><!--Error-->
+					<td>font-size</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>365</td><!--Location-->
+					<td>.media was was wrongly use </td><!--Error-->
+					<td>replaced with @media</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>line 87 </td><!--Location-->
+					<td>it was treated as a tag and not a class</td><!--Error-->
+					<td>put a . in the selector </td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>line 78</td><!--Location-->
+					<td>missing a semi colon</td><!--Error-->
+					<td>semi colon at the end of the property</td><!--Your Change-->
+				</tr>
+			</table>
+			</article>
+			<article>
+				<h3>Home</h3>
+				<p><strong>Hints&#58;</strong> There will be things like missing meta-data, incorrectly set-up links, not escaped characters, extra closing tags, etc.</p>
+			<table class="lefty">
+				<caption>index.html Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>line 4</td><!--Location-->
+					<td>no charset</td><!--Error-->
+					<td>set the character in utf-8</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>line 48</td><!--Location-->
+					<td>extra closing tag</td><!--Error-->
+					<td>closing tag has been removed</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>line 45</td><!--Location-->
+					<td>tag /br </td><!--Error-->
+					<td>closing line has been removed</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>14</td><!--Location-->
+					<td>improper structure</td><!--Error-->
+					<td>change link to href</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>15</td><!--Location-->
+					<td>improper structure</td><!--Error-->
+					<td>change link to href</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>16</td><!--Location-->
+					<td>improper structure</td><!--Error-->
+					<td>change link to href</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>line 24</td><!--Location-->
+					<td>incorrect url code</td><!--Error-->
+					<td>fix the path</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>line 24</td><!--Location-->
+					<td>closing image</td><!--Error-->
+					<td>removed extra tag</td><!--Your Change-->
+				</tr>
+			</table>
+			</article>
+			</section>
+		<section class="column-layout">
+			<article>
+				<h3>Page 1</h3>
+				<p><strong>Hints&#58;</strong> Make sure all the necessary links are correct, special characters are escaped, and all extraneous tags are removed. If you find any tags that don't seem to have any content they should be removed because it bloats your code.</p>
+			<table class="lefty">
+				<caption>page-1.html Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>line 15</td><!--Location-->
+					<td>extra closing paragraph </td><!--Error-->
+					<td>deleted the extra command</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>line 38</td><!--Location-->
+					<td>unuse tags</td><!--Error-->
+					<td>deleted</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>line 51</td><!--Location-->
+					<td>improper copyright tag</td><!--Error-->
+					<td>replace withs the proper tag &copy;</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>line 17</td><!--Location-->
+					<td>incomplet colosing tag nav </td><!--Error-->
+					<td>finish the tag with proper closing tag /nav</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>line 7</td><!--Location-->
+					<td>missing link</td><!--Error-->
+					<td>added style sheet</td><!--Your Change-->
+				</tr>
+			</table>
+			</article>
+			<article>
+				<h3>Page 2</h3>
+				<p><strong>Hints&#58;</strong> Make sure the structure of the page matches the other pages, there are no extra tags, and all special characters are escaped.</p>
+			<table class="lefty">
+				<caption>page-2.html Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>line 2</td><!--Location-->
+					<td>the language was not declare</td><!--Error-->
+					<td>set the page to english</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>line 28</td><!--Location-->
+					<td>missing tag</td><!--Error-->
+					<td>added closing tag</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>line 47</td><!--Location-->
+					<td>non escape character</td><!--Error-->
+					<td>escape the character</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>line 54</td><!--Location-->
+					<td>non escape character</td><!--Error-->
+					<td>escape the character</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>line 59</td><!--Location-->
+					<td>missing paragraph tags</td><!--Error-->
+					<td>added tags</td><!--Your Change-->
+				</tr>
+			</table>
+			</article>
+		</section>
+		<section class="column-layout">
+			<article>
+				<h3>Page A</h3>
+				<p><strong>Hints&#58;</strong> Check all the links and make sure all the tags have the appropriate attributes.</p>
+			<table class="lefty">
+				<caption>page-a.html Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>line 7</td><!--Location-->
+					<td>incorrect file path</td><!--Error-->
+					<td>fixed file path</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>line 18</td><!--Location-->
+					<td>incorrect file path</td><!--Error-->
+					<td>fixed file path</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>line 19</td><!--Location-->
+					<td>incorrect file path</td><!--Error-->
+					<td>fixed file path</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>line 20</td><!--Location-->
+					<td>incorrect file path</td><!--Error-->
+					<td>fixed file path</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>line 30</td><!--Location-->
+					<td>missing alt text</td><!--Error-->
+					<td>added alt text</td><!--Your Change-->
+				</tr>
+			</table>
+			</article>
+			<article>
+				<h3>Page B</h3>
+				<p><strong>Hints&#58;</strong> Double check the structure of this page compared to the others and look for extra tags and special characters.</p>
+			<table class="lefty">
+				<caption>page-b.html Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>line 2</td><!--Location-->
+					<td>language not declare</td><!--Error-->
+					<td>pages language set to english</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>line 4</td><!--Location-->
+					<td>no character set</td><!--Error-->
+					<td>added char set</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>line 20</td><!--Location-->
+					<td>class incorrectly written</td><!--Error-->
+					<td>class="active-a"</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>line 49&53</td><!--Location-->
+					<td>missing row tags</td><!--Error-->
+					<td>added tags</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>line 77</td><!--Location-->
+					<td>not escape character</td><!--Error-->
+					<td>added escape character</td><!--Your Change-->
+				</tr>
+			</table>
+			</article>
+			</section>
+		<section class="column-layout">
+			<article>
+				<h3>Page C</h3>
+				<p><strong>Hints&#58;</strong> Look for bad links, mistyped tags, and bad page structure.</p>
+			<table class="lefty">
+				<caption>page-c.html Errors</caption>
+				<tr>
+					<th>Error Number</th>
+					<th>Location</th>
+					<th>Error</th>
+					<th>Your Change</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Location was in the head</td><!--Location-->
+					<td>header in the worn place</td><!--Error-->
+					<td>move to body</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>line 26</td><!--Location-->
+					<td>worng file path</td><!--Error-->
+					<td>fix path</td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>lines 37&41</td><!--Location-->
+					<td>using description list tags</td><!--Error-->
+					<td>change to Unordered list tags </td><!--Your Change-->
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>line 64</td><!--Location-->
+					<td>closing body tag in the worng placed</td><!--Error-->
+					<td>moved it after footer</td><!--Your Change-->
+				</tr>
+			</table>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
